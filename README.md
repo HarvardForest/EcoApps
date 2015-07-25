@@ -33,5 +33,5 @@ Multiple [Shiny](http://shiny.rstudio.com/) web applications, where each app sim
 5) Open and run the script "install.R" to download the required
   dependencies and launch the app locally
   
-(If "install.R" has already ran on your machine, use the "runMe.R"
+(If "install.R" has already run on your machine, use the "runMe.R"
 script to launch the app without reinstalling the dependencies)
