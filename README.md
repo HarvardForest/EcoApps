@@ -2,7 +2,7 @@
 
 ## Harvard Forest Summer Research Program in Ecology
 
-### REU Student: Nathan Justice
+### REU Student: [Nathan Justice](mailto:n.justice@outlook.com)
 
 #### Dates: May 26, 2015 - August 7, 2015
 
