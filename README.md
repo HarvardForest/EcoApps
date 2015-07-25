@@ -28,9 +28,9 @@ Multiple [Shiny](http://shiny.rstudio.com/) web applications, where each app sim
 
 `cd ~/Desktop/EcoApps`
 
-`cd *nameOfAppDirectory*`
+`cd nameOfAppDirectory`
 
-5. Open and run the script "install.R" to download the required
+5) Open and run the script "install.R" to download the required
   dependencies and launch the app locally
   
 (If "install.R" has already ran on your machine, use the "runMe.R"
