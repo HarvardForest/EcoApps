@@ -10,21 +10,21 @@
 A computational tool used to investigate tipping points and early warning signals in simulations of ecosystem dynamics
 
 #### Method: 
-multiple [Shiny](http://shiny.rstudio.com/) web applications, where each app simulates a different ecological model
+Multiple [Shiny](http://shiny.rstudio.com/) web applications, where each app simulates a different ecological model
 
 # Instructions:
 
-1. [Download R](https://www.r-project.org/)
+1) [Download R](https://www.r-project.org/)
 
-2. [Download Git](https://git-scm.com/downloads)
+2) [Download Git](https://git-scm.com/downloads)
 
-3. Clone this repository to your desktop using the terminal commands:
+3) Clone this repository to your desktop using the terminal commands:
 
 `cd ~/Desktop`
 
 `git clone https://github.com/HarvardForest/EcoApps.git`
 
-4. Open the desired web application by navigating into the appropriate directory:
+4) Open the desired web application by navigating into the appropriate directory:
 
 `cd ~/Desktop/EcoApps`
 
