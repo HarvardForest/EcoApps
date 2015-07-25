@@ -12,7 +12,7 @@ A computational tool used to investigate tipping points and early warning signal
 #### Method: 
 Multiple [Shiny](http://shiny.rstudio.com/) web applications, where each app simulates a different ecological model
 
-# Instructions:
+# Instructions for launching locally:
 
 1) [Download R](https://www.r-project.org/)
 
