@@ -14,7 +14,7 @@ library(shinyapps)
 library(shinythemes)
 library(shinyAce)
 library(deSolve)
-library(breakpoint)
+library(cpm)
 library(earlywarnings)
 library(plotrix)
 
