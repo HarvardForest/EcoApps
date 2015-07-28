@@ -91,7 +91,6 @@ shinyUI(fluidPage(
                       ),
                       uiOutput("quick_frequencySlot"),
                       uiOutput("quick_decomposeOptionsSlot"),
-                      uiOutput("quick_NmaxSlot"),
                       uiOutput("quick_winsizeSlot"),
                       uiOutput("quick_runButtonSlot")
                     ), # column
@@ -151,41 +150,14 @@ shinyUI(fluidPage(
                   fluidRow(
                     column(6, align="left",
                       h3("Tipping Point parameters"),
-                      selectInput("breakpointType", "Analysis Type:",
-                        choices=c("for Continuous Data",
-                          "with Negative Binomial Distribution",
-                          "with Zero-Inflated Negative Binomial Distribution")
-                      ),
-                      numericInput("Nmax", "Maximum number of breakpoints:", value=10),
-                      selectInput("distributionType", "Distribution to simulate break-point locations:",
-                        choices=c("Four Parameter Beta Distribution",
-                          "Truncated Normal Distribution")
-                      ),
-                      numericInput("eps",
-                        "the cut-off value for the stopping criterion in the CE method:",
-                        value=0.01
-                      ),
-                      numericInput("rho",
-                        "The fraction which is used to obtain the best performing set of sample solutions (i.e., elite sample):",
-                        value=0.05
-                      ),
-                      numericInput("M",
-                        "Sample size to be used in simulating the locations of break-points:",
-                        value=200
-                      ),
-                      numericInput("h", "Minimum aberration width:", value=5),
-                      numericInput("a",
-                        "Used in the four parameter beta distribution to smooth both shape parameters.
-                          When simulating from the truncated normal distribution,
-                          this value is used to smooth the estimates of the mean values:",
-                        value=0.8
-                      ),
-                      numericInput("b", "A smoothing parameter value. It is used in the truncated
-                        normal distribution to smooth the estimates of the standard deviation:",
-                        value=0.8
-                      ),
-                      helpText(a("Click here to view the R 'breakpoint' Package documentation.",
-                        href="http://cran.r-project.org/web/packages/breakpoint/breakpoint.pdf",
+                      selectInput("cpmType", "Change point model type:",
+                                  choices=c("Exponential distribution", "Gaussian sequence")),
+                      numericInput("startup", "The number of observations after which monitoring begins.
+                                   No breakpoints will be flagged during this period.
+                                   (the value should be at least 20):",
+                                   value=20),
+                      helpText(a("Click here to view the R 'cpm' Package documentation.",
+                        href="https://cran.r-project.org/web/packages/cpm/cpm.pdf",
                         target="_blank")
                       )
                     ), # column
@@ -333,10 +305,9 @@ shinyUI(fluidPage(
           h3("'shinyAce' Package:"),
           p("Trestle Technology and LLC. (2013). shinyAce: Ace editor bindings for Shiny. R package version 0.1.0.
             http://CRAN.R-project.org/package=shinyAce"),
-          h3("'breakpoint' Package:"),
-          p("Priyadarshana W.J.R.M. and Georgy Sofronov (2014). breakpoint: Multiple
-              Break-Point Detection via the Cross-Entropy Method. R package version 1.1.
-              http://CRAN.R-project.org/package=breakpoint"),
+          h3("'cpm' Package:"),
+          p(" Gordon J. Ross (2015). Parametric and Nonparametric Sequential Change Detection in R: The cpm Package.
+            Journal of Statistical Software."),
           h3("'earlywarnings' Package:"),
           p("Vasilis Dakos et al. Methods for detecting early warnings of critical transitions
               in time series illustrated using simulated ecological dataPLoS One 7(7):e41010, 2012. See
