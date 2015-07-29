@@ -7,12 +7,12 @@
 ################################################################################
 
 install.packages("shiny")
-install.packages("shinyapps")
 install.packages("shinythemes")
 install.packages("shinyAce")
 install.packages("deSolve")
 install.packages("cpm")
-install.packages("earlywarnings")
+#install.packages("earlywarnings")
+install.pakcages("moments")
 install.packages("plotrix")
 
 shiny::runApp("~/Desktop/EcoApps/lvpredpreyApp")
