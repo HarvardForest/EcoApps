@@ -53,51 +53,66 @@ dashboardPage(skin="green",
       tabItem(tabName="Apps",
         fluidRow(
           column(12, align="center",
-            h1("Explore the Models:"),
-            br(),
-            br(),
-            a(imageOutput("lvpredatorpreyScreenshot"),
-              href="https://ecoapps-lvpredatorprey.herokuapp.com/", target="_blank"),
-            br(),
-            br(),
-            br(),
-            a(p("Click here or on the image to launch the Predator-Prey app through Heroku"),
-              href="https://ecoapps-lvpredatorprey.herokuapp.com/", target="_blank"),
-            p("or"),
-            a(p("Click here to launch the Predator-Prey app through RStudio's Shiny server"),
-              href="https://nthnjustice.shinyapps.io/ecoapps-lvpredatorprey", target="_blank"),
-            br(),
-            br(),
-            a(imageOutput("pitcherplantScreenshot"),
-              href="http://ecoapps-pitcherplant.herokuapp.com/", target="_blank"),
-            br(),
-            br(),
-            br(),
-            a(p("Click here or on the image to launch the Pitcher Plant app through Heroku"),
-              href="http://ecoapps-pitcherplant.herokuapp.com/", target="_blank"),
-            p("or"),
-            a(p("Click here to launch the Pitcher Plant app through RStudio's Shiny server"),
-              href="https://nthnjustice.shinyapps.io/ecoapps-pitcherplant", target="_blank"),
-            br(),
-            br()
+            h1("View the apps:")
+          )
+        ), # end: fluidRow
+        fluidRow(
+          column(12, align="center",
+            box(width=NULL,
+              a(imageOutput("lvpredatorpreyScreenshot"),
+                href="https://ecoapps-lvpredatorprey.herokuapp.com/", target="_blank"),
+              br(),
+              br(),
+              br(),
+              a(p("Click here or on the image to launch the Predator-Prey app through Heroku"),
+                href="https://ecoapps-lvpredatorprey.herokuapp.com/", target="_blank"),
+              p("or"),
+              a(p("Click here to launch the Predator-Prey app through RStudio's Shiny server"),
+                href="https://nthnjustice.shinyapps.io/ecoapps-lvpredatorprey", target="_blank")
+            ) # end: box
+          ) # end: column
+        ), # end: fluidRow
+        fluidRow(
+          column(12, align="center",
+            box(width=NULL,
+              a(imageOutput("pitcherplantScreenshot"),
+                href="http://ecoapps-pitcherplant.herokuapp.com/", target="_blank"),
+              br(),
+              br(),
+              br(),
+              a(p("Click here or on the image to launch the Pitcher Plant app through Heroku"),
+                href="http://ecoapps-pitcherplant.herokuapp.com/", target="_blank"),
+              p("or"),
+              a(p("Click here to launch the Pitcher Plant app through RStudio's Shiny server"),
+                href="https://nthnjustice.shinyapps.io/ecoapps-pitcherplant", target="_blank")
+            ) # end: box
           ) # end: column
         ) # end: fluidRow
       ), #end: tabItem - Apps
       tabItem(tabName="Tutorial",
-        h1("PASS")
+        box(width=NULL,
+          h1("PASS")
+        ) # end: box
       ), # end:tabItem - Tutorial
       tabItem(tabName="Source",
         fluidRow(
           column(12, align="center",
-            a(h3("Click to view the 'EcoApps' Github repository."),
-                 href="https://github.com/HarvardForest/ecoapps", target="_blank"),
-            a(imageOutput("githubScreenshot"),
-              href="https://github.com/HarvardForest/ecoapps", target="_blank")
+            box(width=NULL,
+              a(h3("Click to view the 'EcoApps' Github repository."),
+                href="https://github.com/HarvardForest/ecoapps", target="_blank"),
+              a(imageOutput("githubScreenshot"),
+                href="https://github.com/HarvardForest/ecoapps", target="_blank"),
+              br(),
+              br(),
+              br()
+            ) # end: box
           ) # end: column
         ) # end: fluidRow
       ), # end: tabItem - Source
       tabItem(tabName="Contact",
-        h1("PASS")
+        box(width=NULL,
+          h1("PASS")
+        ) # end: box
       ) # end: tabItem - Contact
     ) # end: tabItems
   )
