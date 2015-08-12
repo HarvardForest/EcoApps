@@ -38,6 +38,13 @@ shinyServer(function(input, output, session){
     )
   }, deleteFile=FALSE)
 
+  output$hflogo <- renderImage({
+    list(src="hflogo.jpg",
+         contentType="image/jpg",
+         alt="The Harvard Forest Logo."
+    )
+  }, deleteFile=FALSE)
+
 }) # end: shinyServer
 
 ### end: server ###
