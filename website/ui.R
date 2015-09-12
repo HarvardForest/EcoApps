@@ -155,15 +155,15 @@ dashboardPage(skin="green",
           column(12, align="center",
             box(width=NULL,
               a(imageOutput("lvpredatorpreyScreenshot"),
-                href="https://ecoapps-lvpredatorprey.herokuapp.com/", target="_blank"),
+                href="https://nthnjustice.shinyapps.io/ecoapps-lvpredatorprey", target="_blank"),
               br(),
               br(),
               br(),
-              a(p("Click here or on the image to launch the Predator-Prey app through Heroku"),
-                href="https://ecoapps-lvpredatorprey.herokuapp.com/", target="_blank"),
+              a(p("Click here or on the image to launch the Predator-Prey app through RStudio's Shiny server"),
+                href="https://nthnjustice.shinyapps.io/ecoapps-lvpredatorprey", target="_blank"),
               p("or"),
-              a(p("Click here to launch the Predator-Prey app through RStudio's Shiny server"),
-                href="https://nthnjustice.shinyapps.io/ecoapps-lvpredatorprey", target="_blank")
+              a(p("Click here to launch the Predator-Prey app through Heroku"),
+                href="https://ecoapps-lvpredatorprey.herokuapp.com/", target="_blank")
             ) # end: box
           ) # end: column
         ), # end: fluidRow
@@ -171,15 +171,15 @@ dashboardPage(skin="green",
           column(12, align="center",
             box(width=NULL,
               a(imageOutput("pitcherplantScreenshot"),
-                href="http://ecoapps-pitcherplant.herokuapp.com/", target="_blank"),
+                href="https://nthnjustice.shinyapps.io/ecoapps-pitcherplant", target="_blank"),
               br(),
               br(),
               br(),
-              a(p("Click here or on the image to launch the Pitcher Plant app through Heroku"),
-                href="http://ecoapps-pitcherplant.herokuapp.com/", target="_blank"),
+              a(p("Click here or on the image to launch the Pitcher Plant app through RStudio's Shiny server"),
+                href="https://nthnjustice.shinyapps.io/ecoapps-pitcherplant", target="_blank"),
               p("or"),
-              a(p("Click here to launch the Pitcher Plant app through RStudio's Shiny server"),
-                href="https://nthnjustice.shinyapps.io/ecoapps-pitcherplant", target="_blank")
+              a(p("Click here to launch the Pitcher Plant app through Heroku"),
+                href="http://ecoapps-pitcherplant.herokuapp.com/", target="_blank")
             ) # end: box
           ) # end: column
         ) # end: fluidRow
