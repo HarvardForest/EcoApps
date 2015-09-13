@@ -159,10 +159,10 @@ dashboardPage(skin="green",
               br(),
               br(),
               br(),
-              a(p("Click here or on the image to launch the Predator-Prey app through RStudio's Shiny server"),
+              a(h2("Click here or on the image to launch the Predator-Prey app through RStudio's Shiny server"),
                 href="https://ecoapps.shinyapps.io/lvpredatorprey", target="_blank"),
-              p("or"),
-              a(p("Click here to launch the Predator-Prey app through Heroku"),
+              h4("or"),
+              a(h3("Click here to launch the Predator-Prey app through Heroku"),
                 href="https://ecoapps-lvpredatorprey.herokuapp.com/", target="_blank")
             ) # end: box
           ) # end: column
@@ -175,10 +175,10 @@ dashboardPage(skin="green",
               br(),
               br(),
               br(),
-              a(p("Click here or on the image to launch the Pitcher Plant app through RStudio's Shiny server"),
+              a(h2("Click here or on the image to launch the Pitcher Plant app through RStudio's Shiny server"),
                 href="https://ecoapps.shinyapps.io/pitcherplant", target="_blank"),
-              p("or"),
-              a(p("Click here to launch the Pitcher Plant app through Heroku"),
+              h4("or"),
+              a(h3("Click here to launch the Pitcher Plant app through Heroku"),
                 href="http://ecoapps-pitcherplant.herokuapp.com/", target="_blank")
             ) # end: box
           ) # end: column
@@ -193,8 +193,9 @@ dashboardPage(skin="green",
         fluidRow(
           column(12, align="center",
             box(width=NULL,
-              a(h3("Click to view the 'EcoApps' Github repository."),
+              a(h1("Click to view the 'EcoApps' Github repository."),
                 href="https://github.com/HarvardForest/ecoapps", target="_blank"),
+              br(),
               a(imageOutput("githubScreenshot"),
                 href="https://github.com/HarvardForest/ecoapps", target="_blank"),
               br(),
@@ -206,8 +207,8 @@ dashboardPage(skin="green",
       ), # end: tabItem - Source
       tabItem(tabName="Contact",
         box(width=NULL,
-          a(h2("Matthew Lau"), href="http://harvardforest.fas.harvard.edu/researchers/8438", target="_blank")
-        ) # end: box
+          h2("For support, please contact:"),
+          a(h1("Matthew Lau"),  href="http://harvardforest.fas.harvard.edu/researchers/8438", target="_blank"))
       ) # end: tabItem - Contact
     ) # end: tabItems
   )
