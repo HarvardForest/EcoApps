@@ -45,6 +45,41 @@ shinyServer(function(input, output, session){
     )
   }, deleteFile=FALSE)
 
+  output$sidePanelScreenshot <- renderImage({
+    list(src="sidePanelScreenshot.png",
+         contentType="image/png",
+         alt="A screenshot of the sidebar panel."
+    )
+  }, deleteFile=FALSE)
+
+  output$stateVariableToggle1 <- renderImage({
+    list(src="stateVariableToggle1.png",
+         contentType="image/png",
+         alt="A screenshot of the sidebar panel."
+    )
+  }, deleteFile=FALSE)
+
+  output$stateVariableToggle2 <- renderImage({
+    list(src="stateVariableToggle2.png",
+         contentType="image/png",
+         alt="A screenshot of the sidebar panel."
+    )
+  }, deleteFile=FALSE)
+
+  output$stateVariableToggle3 <- renderImage({
+    list(src="stateVariableToggle3.png",
+         contentType="image/png",
+         alt="A screenshot of the sidebar panel."
+    )
+  }, deleteFile=FALSE)
+
+  output$dataTableTabScreenshot <- renderImage({
+    list(src="dataTableTabScreenshot.png",
+         contentType="image/png",
+         alt="A screenshot of the sidebar panel."
+    )
+  }, deleteFile=FALSE)
+
 }) # end: shinyServer
 
 ### end: server ###

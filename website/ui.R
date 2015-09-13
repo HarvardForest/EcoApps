@@ -148,7 +148,7 @@ dashboardPage(skin="green",
       tabItem(tabName="Apps",
         fluidRow(
           column(12, align="center",
-            h1("View the apps:")
+            h1(strong("View the apps:"))
           )
         ), # end: fluidRow
         fluidRow(
@@ -186,9 +186,59 @@ dashboardPage(skin="green",
       ), #end: tabItem - Apps
       tabItem(tabName="Tutorial",
         box(width=NULL,
-          h1("PASS")
+          h1(strong("Each app has three primary features:")),
+          h2("1) Simulate a distinct ecosystem model"),
+          h2("2) Perform breakpoint (tipping point) analysis"),
+          h2("3) Perform early warning signal analysis"),
+          br(),
+          h2(strong("Simulation")),
+          h3("The main plot graphically displays the values computed by the ecosystem model."),
+          h3("Use the input-boxes in the sidebar panel to adjust the value of the model's parameters."),
+          imageOutput("sidePanelScreenshot"),
+          br(),
+          br(),
+          br(),
+          br(),
+          br(),
+          br(),
+          br(),
+          br(),
+          br(),
+          br(),
+          br(),
+          br(),
+          br(),
+          br(),
+          br(),
+          br(),
+          br(),
+          br(),
+          br(),
+          h3("Use the toggle buttons below the plot to view individual state variables."),
+          fluidRow(
+            column(12, align="center",
+              imageOutput("stateVariableToggle1"),
+              br(),
+              br(),
+              br(),
+              imageOutput("stateVariableToggle2"),
+              br(),
+              br(),
+              imageOutput("stateVariableToggle3"),
+              br(),
+              br(),
+              br()
+            ) # end: column
+          ), # end: fluidRow
+          h3("The 'Data Table' tab reports the actual values of the state variables, computed by the model implementation."),
+          h3("This table can be searched, sorted, and downloaded as a .csv file."),
+          imageOutput("dataTableTabScreenshot"),
+          br(),
+          br(),
+          br(),
+          h3("The mathematical and R implementations of the model can be reviewed under the 'Model' tab.")
         ) # end: box
-      ), # end:tabItem - Tutorial
+      ), # end: tabItem - Tutorial
       tabItem(tabName="Source",
         fluidRow(
           column(12, align="center",
