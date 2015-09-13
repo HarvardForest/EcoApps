@@ -80,6 +80,13 @@ shinyServer(function(input, output, session){
     )
   }, deleteFile=FALSE)
 
+  output$modelTabScreenshot <- renderImage({
+    list(src="modelTabScreenshot.png",
+         contentType="image/png",
+         alt="A screenshot of the sidebar panel."
+    )
+  }, deleteFile=FALSE)
+
 }) # end: shinyServer
 
 ### end: server ###
