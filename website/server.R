@@ -108,6 +108,20 @@ shinyServer(function(input, output, session){
     )
   }, deleteFile=FALSE)
 
+  output$EWSoverviewScreenshot <- renderImage({
+    list(src="EWSoverviewScreenshot.png",
+         contentType="image/png",
+         alt="An overview of the statistical methods for the early warning signal analysis."
+    )
+  }, deleteFile=FALSE)
+
+  output$drawnEWSLineScreenshot <- renderImage({
+    list(src="drawnEWSLineScreenshot.png",
+         contentType="image/png",
+         alt="A screenshot of drawn early warning signal line."
+    )
+  }, deleteFile=FALSE)
+
 }) # end: shinyServer
 
 ### end: server ###

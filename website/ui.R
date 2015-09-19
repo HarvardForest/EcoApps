@@ -88,13 +88,13 @@ dashboardPage(skin="green",
               h3("The project’s theme is ecosystem dynamics, an important field
                  in ecology. A prime example of its significance and relevancy is
                  highlighted in this public service announcement, released by the
-                 Ohio Department of Health in August, 2014: “Do not drink the water.”
+                 Ohio Department of Health in August, 2014: 'Do not drink the water'.
                  This message was directed to over 400,000 people in the Toledo area.
                  The advisory was released in response to high levels of a toxin
-                 from the eruption of algae blooms in Lake Erie. "),
+                 from the eruption of algae blooms in Lake Erie."),
               h3("The classic scenario of eutrophication, which can be boiled down
                  to sudden algae blooms a body of water due to agricultural runoff,
-                 is a commonly used example of a “tipping point” in ecology. A
+                 is a commonly used example of a 'tipping point' in ecology. A
                  tipping point, analogous to tipping points described in economic
                  and socio-cultural dynamics, represents a threshold in which,
                  once crossed, the ecosystem in question could be susceptible to
@@ -272,8 +272,6 @@ dashboardPage(skin="green",
           h4("This method is more abstract in that arguments are mostly obscured from the user and default values are used."),
           h3(strong("2) The 'Advanced Analysis' is ideal for those who have a better understanding of ecological modeling.")),
           h4("With this method, users have more control over argument values. The default values (which can be modified through this method) are the same used with the 'Quick Analysis'."),
-          hr(),
-          h3(strong("'Quick Analysis'")),
           h3("First choose the desired state variable for the tipping point analysis."),
           imageOutput("stateVariableSelectionScreenshot"),
           h3("The frequency will be set to an arbitrarily determined 'best fit' value, but this value can be modified."),
@@ -295,7 +293,24 @@ dashboardPage(skin="green",
           br(),
           br(),
           br(),
-          br()
+          br(),
+          br(),
+          br(),
+          hr(),
+          hr(),
+          hr(),
+          h2(strong("Early Warning Signals")),
+          h3("In addition to detecting potential tipping points, the application is able to run an early warning signals analysis on the model simulation."),
+          h3("Again, there are two methods to perform this analysis:"),
+          h3(strong("1) The 'Quick Analysis' subtab is useful for those who have less familiarity and experience with ecological modeling and ecosystem dynamics.")),
+          h4("This method is more abstract in that arguments are mostly obscured from the user and default values are used."),
+          h3(strong("2) The 'Advanced Analysis' is ideal for those who have a better understanding of ecological modeling.")),
+          h4("With this method, users have more control over argument values. The default values (which can be modified through this method) are the same used with the 'Quick Analysis'."),
+          h3("After performing the tipping point analysis following the steps detailed in the Tipping Points section, the user may select a statistical method of interest as the early warning signal"),
+          imageOutput("EWSoverviewScreenshot"),
+          h3("Clicking the", em("Download Early Warning Statistics"), "button will download the values for all of the statistical methods as a .csv file."),
+          h3("Selecting one of the radio buttons will run the early warning signals analysis and plot the results for the corresponding method."),
+          imageOutput("drawnEWSLineScreenshot")
         ) # end: box
       ), # end: tabItem - Tutorial
       tabItem(tabName="Source",
