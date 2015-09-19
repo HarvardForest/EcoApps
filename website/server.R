@@ -122,6 +122,27 @@ shinyServer(function(input, output, session){
     )
   }, deleteFile=FALSE)
 
+  output$EWStableScreenshot <- renderImage({
+    list(src="EWStableScreenshot.png",
+         contentType="image/png",
+         alt="A screenshot of the EWS statistic table."
+    )
+  }, deleteFile=FALSE)
+
+  output$RcodeTabScreenshot <- renderImage({
+    list(src="RcodeTabScreenshot.png",
+         contentType="image/png",
+         alt="A screenshot of the R Code tab."
+    )
+  }, deleteFile=FALSE)
+
+  output$customizeGraphTabScreenshot <- renderImage({
+    list(src="customizeGraphTabScreenshot.png",
+         contentType="image/png",
+         alt="A screenshot of the customize graph tab."
+    )
+  }, deleteFile=FALSE)
+
 }) # end: shinyServer
 
 ### end: server ###
