@@ -2,20 +2,22 @@
 
 ## Harvard Forest Summer Research Program in Ecology
 
-### REU Student: [Nathan Justice](mailto:n.justice@outlook.com)
+### REU Student: [Nathan Justice](https://github.com/nthnjustice)
 
 #### Dates: May 26, 2015 - August 7, 2015
+
+## Home page: http://ecoapps.herokuapp.com/
 
 # View the apps:
 
 ### Lotka-Volterra Predator Prey:
-https://ecoapps-lvpredatorprey.herokuapp.com/ or https://nthnjustice.shinyapps.io/ecoapps-lvpredatorprey
+https://ecoapps.shinyapps.io/lvpredatorprey or https://ecoapps-lvpredatorprey.herokuapp.com/
 
 ### Pitcher Plant:
-http://ecoapps-pitcherplant.herokuapp.com/ or https://nthnjustice.shinyapps.io/ecoapps-pitcherplant
+https://ecoapps.shinyapps.io/pitcherplant or http://ecoapps-pitcherplant.herokuapp.com/
 
 #### Goal: 
-A computational tool used to investigate tipping points and early warning signals in simulations of ecosystem dynamics
+A computational tool used to investigate tipping points and early warning signals in simulations of ecosystem models
 
 #### Method: 
 Multiple [Shiny](http://shiny.rstudio.com/) web applications, where each app simulates a different ecological model
@@ -30,11 +32,11 @@ Multiple [Shiny](http://shiny.rstudio.com/) web applications, where each app sim
 
 `cd ~/Desktop`
 
-`git clone https://github.com/HarvardForest/EcoApps.git`
+`git clone https://github.com/HarvardForest/ecoapps.git`
 
 4) Open the desired web application by navigating into the appropriate directory:
 
-`cd ~/Desktop/EcoApps`
+`cd ~/Desktop/ecoapps`
 
 `cd nameOfAppDirectory`
 
