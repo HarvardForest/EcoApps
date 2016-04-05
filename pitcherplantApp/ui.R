@@ -22,15 +22,14 @@ shinyUI(fluidPage(
     sidebarPanel(
       numericInput("days", label=h4("Number of Days:"), value=3),
       numericInput("feedingTime", label=h4("Feeding Time (in minutes):"), value=720),
-      numericInput("foodWeight", label=h4("Food Weight:"), value=5),
-      numericInput("beta", label=h4("Beta Value:"), value=0.001),
-      numericInput("aMax", label=h4("Maximum Value of Augmentation:"), value=10),
+      numericInput("foodWeight", label=h4("Food Weight:"), value=75),
+      numericInput("beta", label=h4("Beta Value:"), value=0.000045,step=0.000005),
+      numericInput("aMax", label=h4("Maximum Value of Augmentation:"), value=2),
       numericInput("aMin", label=h4("Minimum Value of Augmentation:"), value=1),
-      numericInput("Bscaler", label=h4("Scale Biological Oxygen Demand Value by:"), value=1),
-      numericInput("k", label=h4("k Value:"), value=1),
-      numericInput("s", label=h4("s Value:"), value=10),
-      numericInput("d", label=h4("d Value:"), value=1),
-      numericInput("c", label=h4("c Value:"), value=100)
+      numericInput("k", label=h4("k"), value=1),
+      numericInput("s", label=h4("s"), value=1),
+      numericInput("d", label=h4("d"), value=5),
+      numericInput("c", label=h4("c"), value=1)
     ), # sidebarPanel
 
     ### end: sidebar ###

@@ -5,4 +5,4 @@
 #     Last edited: 29July2015
 ################################################################################
 
-shiny::runApp("~/Desktop/summer2015/pitcherplantApp")
+shiny::runApp("../pitcherplantApp")

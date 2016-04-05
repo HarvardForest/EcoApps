@@ -9,7 +9,7 @@
 ###### Shiny server ######
 
 # load dependencies
-source("global.R", local=TRUE)
+source("./bin/PitcherPlantModel/src/global.R")
 
 ## start server ##
 shinyServer(
@@ -19,7 +19,7 @@ shinyServer(
     ppSim <- reactive({
       pitcherPlantSim(days=input$days, feedingTime=input$feedingTime,
                       foodWeight=input$foodWeight, beta=input$beta,
-                      k=input$k, Bscaler=input$Bscaler, aMax=input$aMax,
+                      k=input$k, aMax=input$aMax,
                       aMin=input$aMin, s=input$s, d=input$d, c=input$c)
     })
 
